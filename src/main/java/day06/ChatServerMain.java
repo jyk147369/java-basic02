@@ -1,4 +1,4 @@
-package day06.ex;
+package day06;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -8,13 +8,15 @@ import java.util.Scanner;
 public class ChatServerMain {
     public static void main(String[] args) {
         try {
+            // 서버가 먼저 실행
             // 포트를 LISTEN 상태로 변경
             ServerSocket serverSocket = new ServerSocket(9876);
             // serverSocket.accept()는 클라이언트 쪽에서 new Socket()이 실행되어야 끝남
+            // client로 부터 연결을 기다림
             Socket cs = serverSocket.accept();
 
 
-            // 여기서부터 보내는 코드
+            // 여기서부터 (글자를) 보내는 코드
             OutputStream os = cs.getOutputStream();
             OutputStreamWriter osw = new OutputStreamWriter(os);
             BufferedWriter bow = new BufferedWriter(osw);
@@ -32,6 +34,7 @@ public class ChatServerMain {
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader bir = new BufferedReader(isr);
             String data = bir.readLine();
+            // readLine : 글자를 읽을때 한줄씩 읽는 메소드
             System.out.println(data);
             // 여기까지 받는 코드 
 

@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class StreamMain3 {
     public static void main(String[] args) throws IOException {
+        // 한글 오류 안남
         FileReader fileReader = null;
         FileWriter fileWriter = null;
         try {

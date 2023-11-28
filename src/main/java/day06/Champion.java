@@ -1,4 +1,4 @@
-package day03;
+package day06;
 
 import java.util.Arrays;
 
@@ -60,12 +60,6 @@ public class Champion {
         this.y = y;
     }
 
-    // 귀환
-    void recall(){
-        this.x = 0;
-        this.y = 0;
-    }
-
     // 아이템 구매
     String[] buy(String item) {
         for (int i=0; i< this.itemList.length; i++) {
@@ -91,6 +85,19 @@ public class Champion {
         }
         return hp;
     }
+
+    // 귀환
+    void recall(){
+        this.x = 0;
+        this.y = 0;
+    }
+
+    // recall 오버로딩
+    void recall(Integer x, Integer y){
+        this.x = x;
+        this.y = y;
+    }
+
 
     // 메소드 오버로딩
     // 똑같은 이름의 메소드를 여러개 만드는 것. 단, 매개변수 수나 매개변수의 타입이 달라야 함
