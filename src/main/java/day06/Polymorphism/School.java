@@ -1,4 +1,4 @@
-package day06;
+package day06.Polymorphism;
 
 public class School {
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class School {
 
         // 다운캐스팅
         // 부모 객체를 자식 타입의 변수에 *형변환* 해서 저장
-        //Student lkj = (Student) new Person();
+        // Student lkj = (Student) new Person();
         Person person = new Student();
         Student lkj = (Student) person;
 

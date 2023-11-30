@@ -1,4 +1,4 @@
-package day06;
+package day06.Polymorphism;
 
 public class CafeMain {
     public static void main(String[] args) {

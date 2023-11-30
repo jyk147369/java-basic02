@@ -1,4 +1,4 @@
-package day06;
+package day06.Polymorphism;
 
 public class Americano extends Coffee {
     String name;

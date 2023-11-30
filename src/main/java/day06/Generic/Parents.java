@@ -1,4 +1,4 @@
-package day06;
+package day06.Generic;
 
 
 // 아름다운 약속, 정해진 문법은 아님

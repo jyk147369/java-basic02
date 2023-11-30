@@ -1,4 +1,6 @@
-package day07.chat;
+package day07.AdditionalFeatures;
+
+import day07.ChatServerThread;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,7 +18,7 @@ public class MultiThreadServer {
 
 
     public static void main(String[] args) {
-        int port = 9999;
+        /*int port = 9998;
 
         try {
             ServerSocket serverSocket = new ServerSocket(port);
@@ -31,11 +33,11 @@ public class MultiThreadServer {
 
                 socketMap.put(id, socket);
 
-                Thread mpt = new MessageProcessThread(id, socket);
+                Thread mpt = new ChatServerThread(id, socket);
                 mpt.start();
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
 }

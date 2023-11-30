@@ -1,4 +1,4 @@
-package day06;
+package day06.Stream;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

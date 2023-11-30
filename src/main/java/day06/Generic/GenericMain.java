@@ -1,4 +1,4 @@
-package day06;
+package day06.Generic;
 
 import java.util.ArrayList;
 import java.util.HashMap;

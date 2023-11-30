@@ -1,4 +1,4 @@
-package day06;
+package day06.Polymorphism;
 
 public class Tristana extends Champion{
     Integer z;

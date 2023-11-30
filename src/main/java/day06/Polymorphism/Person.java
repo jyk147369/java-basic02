@@ -1,4 +1,4 @@
-package day06;
+package day06.Polymorphism;
 
 public class Person {
     // 다형성을 연습하기 위한 간단한 예제

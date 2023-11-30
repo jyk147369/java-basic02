@@ -14,7 +14,7 @@ public class MessageProcessThread extends Thread {
 
     @Override
     public void run() {
-        try {
+        /*try {
             InputStream is = socket.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);
             BufferedInputStream bis = new BufferedInputStream(is);
@@ -68,6 +68,6 @@ public class MessageProcessThread extends Thread {
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
 }
